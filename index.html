@@ -24,8 +24,15 @@
             text-align: center;
         }
         body {
-            height: 850px;
-            background: linear-gradient(deeppink, purple);
+            /* 1280px by 960 px images work great! use this is to resize: https://www.photoresizer.com/ */
+            width:100%;
+            /*height:100%;*/
+            background-image:url('images/CaliSunSet.jpg');
+            padding: 25px;
+            background-position: center;
+            /* Allows the image to be resized with the window it's contained in. */
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         footer {
             background-blend-mode: color;
@@ -36,11 +43,11 @@
             
         }
         p {
-           font-style: italic; 
+           font-style:italic;
         }
         img {
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
             background-blend-mode: darken;
         }
     </style>
@@ -78,9 +85,14 @@
     
     <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
     <div class="jumbotron">
-        <div class="container text-center">
+        <div class="container text-left">
             <h1> Stephanie Miranda </h1>
-            <p> Find an awesome quote... </p>
+            <div class="container text-center">
+                <p> "You must be the change you wish to see in the world" </p>
+                <div class="container text-right">
+                                <p> ~ Mahatma Gandhi</p>
+                </div>
+            </div>
             
         </div>
     </div>
