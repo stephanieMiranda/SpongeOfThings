@@ -4,7 +4,7 @@
     <!-- The following meta need to come before anything else! -->
     <meta charset="UTF-8">
     <!-- The screen/window area. -->
-    <meta name="viewport" content="width=650, initial-1scale=1">
+    <meta name="viewport" content="width=device-width, initial-1scale=1">
     <!-- jquery must come before the bootstrap! -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,6 +13,7 @@
 
 
 <body>
+    <!-- This is the styling to be utilized on the page. -->
     <style>
         .navbar inverse{
             margin-bottom: 0;
@@ -23,7 +24,7 @@
             text-align: center;
         }
         body {
-            height: 550px;
+            height: 650px;
             background: linear-gradient(deeppink, purple);
         }
         footer {
@@ -37,9 +38,14 @@
         p {
             
         }
+        img {
+            width: auto;
+            height: auto;
+        }
     </style>
     
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- This is the navigation bar, it holds buttons and a simple logo. -->
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <!-- this is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
@@ -54,7 +60,7 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="spongeNavbar">
-			<ul class="nav navbar-nav navbar-right">
+			<div class="nav navbar-nav navbar-right">
 				<a href="#">About</a>
 				<a class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
@@ -65,15 +71,19 @@
 					</ul>
 				</a>
 				<a href="#">Contact</a>
-			</ul>
+			</div>
 		</div>
     </nav>
+    
+    <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
     <div class="jumbotron">
         <div class="container text-center">
             <h1> Stephanie Miranda </h1>
             <p> Find an awesome quote... </p>
         </div>
     </div>
+    
+    <!-- This is the body of the page. -->
     <div class="container-fluid text-center">
         <h1>
             <b>
@@ -82,15 +92,16 @@
         </h1>
     </div>
     
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-center bg-3 text-center">
      <p>
-        <h2>
-            This is something else, a different header!
-        </h2>
+         <!-- Adding in an image, just want to see how. -->
+        <img src="images/SacTownOwl.jpg" alt="SacTownOwl"style="width:150px;height:175px">
     </p>
     </div>
 
-
+    
+    
+    <!-- Not sure this section is necessary, but will leave it. -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
