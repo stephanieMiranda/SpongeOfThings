@@ -24,7 +24,7 @@
             text-align: center;
         }
         body {
-            height: 650px;
+            height: 850px;
             background: linear-gradient(deeppink, purple);
         }
         footer {
@@ -36,11 +36,12 @@
             
         }
         p {
-            
+           font-style: italic; 
         }
         img {
             width: auto;
             height: auto;
+            background-blend-mode: darken;
         }
     </style>
     
@@ -80,6 +81,7 @@
         <div class="container text-center">
             <h1> Stephanie Miranda </h1>
             <p> Find an awesome quote... </p>
+            
         </div>
     </div>
     
@@ -90,16 +92,37 @@
             I'm learning new things!
             </b>
         </h1>
-    </div>
-    
-    <div class="container-center bg-3 text-center">
-     <p>
-         <!-- Adding in an image, just want to see how. -->
-        <img src="images/SacTownOwl.jpg" alt="SacTownOwl"style="width:150px;height:175px">
-    </p>
-    </div>
+        <!-- This is the start of the Bootstrap grid. It contains rows with columns. -->
+        <div class="container-center bg-3 text-center">
+            <div class="row">
+                <!-- These make 3 columns!! -->
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <img src="images/SacTownOwl.jpg" alt="SacTownOwl"style="width:150px;height:175px">
+                        <!-- title is what appears, the message is what shows on the page. -->
+                        <p><a href="#" data-toggle="tooltip" title="Yippee!">Hover Here.</a></p>
+                        
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <img src="images/flashcardlogo.jpg" alt="FlashCardLogo"style="width:150px;height:175px">
+                        <p><a href="https://github.com/ASU-CodeDevils/FlashCards"> FlashCards App.</a></p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <img src="images/codedevil.jpg" alt="CodeDevilsLink"style="width:125px;height:175px">
+                        <p><a href="http://www.codedevils.org/"> Check us out!.</a></p>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    
+    </div>
     
     <!-- Not sure this section is necessary, but will leave it. -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
