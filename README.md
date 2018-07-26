@@ -13,11 +13,12 @@ There were several resources used. The first link was the main outline, but I ha
 
 ## Designing/Building website
 
-There were several resources used here. (upload wireframes)
+There were several resources used here. A sort of mixing and matching happened with these to get the look and feel I wanted out of the jumbotron, etc. (upload wireframes)
 
 1) What is Bootstrap and How Do I Use It? article: https://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/
 2) GetBootstrap website: https://getbootstrap.com/docs/3.3/components/#navbar
 3) W3 schools: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_portfolio&stacked=h
+4) https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php
 
 ### Notes
 I began with a simple HTML file, just the index.html. I had to go back and add the Bootstrap after the fact, and in doing so had to find the right links and scripts to get the Bootstrap and JQuery to function properly.

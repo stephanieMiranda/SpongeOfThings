@@ -25,6 +25,14 @@
             background: radial-gradient(chocolate, firebrick);
             text-align: center;
         }
+        .carousel{
+            /*background:radial-gradient(chocolate, firebrick);*/
+            margin-top: 10px;
+        }
+        .carousel .item{
+            max-height: 150px;
+            min-height: 50px;
+        }
         body {
             /* 1280px by 960 px images work great! use this is to resize: https://www.photoresizer.com/ */
             width:100%;
@@ -42,13 +50,17 @@
             
         }
         h1 {
-           font-size:20px;
+            font-size:18px;
             font:bold;
+            color:black;
         }
         h2 {
             font-size:25px;
             font:bold;
             color:black;
+        }
+        h3{
+          font-size:15;  
         }
         p {
            font-style:italic;
@@ -78,6 +90,7 @@
         </div>
         <div class="collapse navbar-collapse" id="spongeNavbar">
 			<div class="nav navbar-nav navbar-right">
+                <a href="#https://www.linkedin.com/in/stephanieemiranda/">LinkedIn</a>
                 <!--
 				<a href="#">About</a>
 				<a class="dropdown">
@@ -95,17 +108,49 @@
     </nav>
     
     <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
-    <div class="jumbotron">
-        <div class="container text-left">
-            <h1> Stephanie Miranda </h1>
-            <div class="container text-center">
-                <p> "You must be the change you wish to see in the world" </p>
-                <div class="container text-right">
-                                <p> ~ Mahatma Gandhi</p>
-                </div>
+    <div class="jumbotron jumbotron-fluid">
+          <!-- Now I can utilize Javascript to change the interval at which these will switch. -->
+          <div id="spongeCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators or the slides we'll references below.
+              <ol class="carousel-indicators">
+                     <li data-target="#spongeCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#spongeCarousel" data-slide-to="1"></li>
+                     <li data-target="#spongeCarousel" data-slide-to="2"></li>
+              </ol>
+               -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <!-- <img src="..." alt="Stuff"> -->
+                      <p>"You must be the change you wish to see in the world." </p>
+                      <div class="container text-right">
+                                      <p> ~ Mahatma Gandhi</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <p> "I believe there are great things in store for those who work hard!" </p>
+                      <div class="container text-right">
+                                      <p> ~ Stephanie Miranda</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <p> "Sometimes you feel like a nut, sometimes you don't!" </p>
+                      <div class="container text-right">
+                                      <p> ~ Almond Joy</p>
+                      </div>
+                  </div>
             </div>
-            
-        </div>
+                    
+             <!-- Left and right controls -->
+             <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>  
+         </div>
     </div>
     
     <!-- This is the body of the page. -->
