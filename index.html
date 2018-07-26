@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head lang="en">
   <title>Sponge of Things</title>
+    <!-- ** Find a way to change the tab image. -->
     <!-- The following meta need to come before anything else! -->
     <meta charset="UTF-8">
     <!-- The screen/window area. -->
@@ -18,9 +19,10 @@
         .navbar inverse{
             margin-bottom: 0;
             border-radius: 0;
+            height:25px;
         }
         .jumbotron {
-            background-color:  aquamarine;
+            background: radial-gradient(chocolate, firebrick);
             text-align: center;
         }
         body {
@@ -40,10 +42,17 @@
             
         }
         h1 {
-            
+           font-size:20px;
+            font:bold;
+        }
+        h2 {
+            font-size:25px;
+            font:bold;
+            color:black;
         }
         p {
            font-style:italic;
+            font-size:12px;
         }
         img {
             width: 100%;
@@ -57,7 +66,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <!-- this is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
-                <a class="navbar-brand" href="#">Stephanie Miranda the Sponge of Things (Put an image here :)
+                <a class="navbar-brand" href="#">Stephanie Miranda the Sponge of Things
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="ican-bar"></span>
@@ -69,6 +78,7 @@
         </div>
         <div class="collapse navbar-collapse" id="spongeNavbar">
 			<div class="nav navbar-nav navbar-right">
+                <!--
 				<a href="#">About</a>
 				<a class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
@@ -79,6 +89,7 @@
 					</ul>
 				</a>
 				<a href="#">Contact</a>
+                -->     
 			</div>
 		</div>
     </nav>
@@ -99,11 +110,11 @@
     
     <!-- This is the body of the page. -->
     <div class="container-fluid text-center">
-        <h1>
+        <h2>
             <b>
-            I'm learning new things!
+            Projects I've been apart of.
             </b>
-        </h1>
+        </h2>
         <!-- This is the start of the Bootstrap grid. It contains rows with columns. -->
         <div class="container-center bg-3 text-center">
             <div class="row">
@@ -111,9 +122,10 @@
                 <div class="col-sm-4">
                     <p>
                         <!-- Adding in an image, just want to see how. -->
-                        <img src="images/SacTownOwl.jpg" alt="SacTownOwl"style="width:150px;height:175px">
+                        <img src="images/WAMMole.jpg" alt="SacTownOwl"style="width:150px;height:175px">
                         <!-- title is what appears, the message is what shows on the page. -->
-                        <p><a href="#" data-toggle="tooltip" title="Yippee!">Hover Here.</a></p>
+                        <!-- <p><a href="#" data-toggle="tooltip" title="Yippee!">Hover Here.</a></p> -->
+                        <p><a href="https://github.com/ASU-CodeDevils/WAM">WAM</a></p>
                         
                     </p>
                 </div>
@@ -121,14 +133,14 @@
                     <p>
                         <!-- Adding in an image, just want to see how. -->
                         <img src="images/flashcardlogo.jpg" alt="FlashCardLogo"style="width:150px;height:175px">
-                        <p><a href="https://github.com/ASU-CodeDevils/FlashCards"> FlashCards App.</a></p>
+                        <p><a href="https://github.com/ASU-CodeDevils/FlashCards"> FlashCards App</a></p>
                     </p>
                 </div>
                 <div class="col-sm-4">
                     <p>
                         <!-- Adding in an image, just want to see how. -->
                         <img src="images/codedevil.jpg" alt="CodeDevilsLink"style="width:125px;height:175px">
-                        <p><a href="http://www.codedevils.org/"> Check us out!.</a></p>
+                        <p><a href="http://www.codedevils.org/"> Check us out!</a></p>
                     </p>
                 </div>
             </div>
