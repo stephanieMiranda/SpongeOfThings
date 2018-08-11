@@ -21,7 +21,7 @@ There were several resources used here. A sort of mixing and matching happened w
 4) https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php
 
 ### Notes
-I began with a simple HTML file, just the index.html. I had to go back and add the Bootstrap after the fact, and in doing so had to find the right links and scripts to get the Bootstrap and JQuery to function properly.
+Please see the Wiki pages for full project description and process. *I had to go back and add the Bootstrap after the fact, and in doing so had to find the right links and scripts to get the Bootstrap and JQuery to function properly.*
 
 ## Professional
 
