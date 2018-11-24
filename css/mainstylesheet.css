@@ -33,6 +33,12 @@
             min-height: 50px;
 }
 
+ul li ul{
+    visibility: hidden;
+    transition: all 0.5s ease;
+    display: none:
+}
+
 body {
             /* 1280px by 960 px images work great! use this is to resize: https://www.photoresizer.com/ */
             /*width:100%;*/
