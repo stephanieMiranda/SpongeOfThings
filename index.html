@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+
 <head lang="en">
-  <title>Sponge of Things</title>
+    <title>Sponge of Things</title>
     <!-- ** Find a way to change the tab image. -->
     <!-- The following meta need to come before anything else! -->
     <meta charset="UTF-8">
@@ -11,196 +12,134 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom Stylesheet(s) below. Note that bootstrap must always come first! -->
-    <link rel="stylesheet" href="css/mainstylesheet.css">
+    <link rel="stylesheet" href="css/mainstylesheet.css?version:1">
     <!-- Import Google Font Awesome.  This is to utilize neat icon images, etc.-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Favicon. -->
+    <link href="img/smfavicon.ico" rel="icon" />
 </head>
 
 
 <body>
-    <!-- This is the styling to be utilized on the page. *Now in a mainstylesheet.css -->
-    <style>
+    <!-- 
+        This is the styling to be utilized on the page. *Now in a mainstylesheet.css 
+        The inline styling would be in tags <style></style>.
+    -->
+    <header>
+        <!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
 
-        /*
-        .navbar inverse{
-            margin-bottom: 0;
-            border-radius: 0;
-            height:25px;
-        }
-        .jumbotron {
-            background: radial-gradient(chocolate, firebrick);
-            text-align: center;
-        }
-        .carousel{
-            /*background:radial-gradient(chocolate, firebrick);
-            margin-top: 10px;
-        }
-        .carousel .item{
-            max-height: 150px;
-            min-height: 50px;
-        }
-        body {
-            /* 1280px by 960 px images work great! use this is to resize: https://www.photoresizer.com/
-            width:100%;
-            /*height:100%;
-            background-image:url('images/CaliSunSet.jpg');
-            padding: 25px;
-            background-position: center;
-            /* Allows the image to be resized with the window it's contained in.
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        footer {
-            background-blend-mode: color;
-            padding: 25px;
-
-        }
-        h1 {
-            font-size:18px;
-            font:bold;
-            color:black;
-        }
-        h2 {
-            font-size:25px;
-            font:bold;
-            color:black;
-        }
-        h3{
-          font-size:15;
-        }
-        p {
-           font-style:italic;
-            font-size:12px;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            background-blend-mode: darken;
-        }
-        */
-    </style>
-
-    <!-- This is the navigation bar, it holds buttons and a simple logo. -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!-- this is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
-                <a class="navbar-brand">Stephanie Miranda the Sponge of Things
-                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span> 
-                    <span class="ican-bar"></span>
-                    <span class="ican-bar"></span>
-                    <span class="ican-bar"></span>
-                    </button> -->
-                </a>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- this is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
+                    <a class="navbar-brand" href="#home">Stephanie Miranda the Sponge of Things
+                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="ican-bar"></span>
+                        <span class="ican-bar"></span>
+                        <span class="ican-bar"></span>
+                        </button> -->
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="collapse navbar-collapse" id="spongeNavbar">
-			<div class="nav navbar-nav navbar-right">
-                <li class="nav-item btn-group">
-                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+
+
+            <div class="collapse navbar-collapse" id="spongeNavbar">
+                <div class="nav navbar-nav navbar-right">
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" href="#about" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
-                            <li><a class="dropdown-item" role="menuitem" href="/SpongeOfThings/projects.html">Projects</a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="#">Hobbies</a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="#">Travel</a></li>
+                            <li><a class="dropdown-item" role="menuitem" href="/projects.html">Projects</a></li>
+                            <li><a class="dropdown-item" role="menuitem" href="#hobbies">Hobbies</a></li>
+                            <li><a class="dropdown-item" role="menuitem" href="#travel">Travel</a></li>
                         </ul>
-                </li>
-                
-				<li class="nav-item btn-group">
-                    <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                    </li>
+
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="linksDrop">
                             <li><a class="dropdown-item" role="menuitem" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
                             <li><a class="dropdown-item" role="menuitem" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
                             <li><a class="dropdown-item" role="menuitem" href="https://www.codedevils.org/">CodeDevils  </a></li>
                         </ul>
-                </li>
+                    </li>
+                </div>
             </div>
-        </div>
-</nav>
+            <!--
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+            -->
+        </nav>
+        <!-- This is a CSS navigation bar.
+            <div class="topnav" id="spongeTopNav">
+                <a href="#home" class="active">Stephanie The Sponge of Things</a>
+                These are the "buttons" in the hamburger menu.
+                <div id="spongeLinks">
+                    <a href="#about">About</a>
+                    <a href="#/projects.html">Projects</a>
+                    <a href="#proLinks">Professional Links</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        -->
+    </header>
 
     <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
     <div class="jumbotron jumbotron-fluid">
-          <!-- Now I can utilize Javascript to change the interval at which these will switch. -->
-          <div id="spongeCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators or the slides we'll references below.
+        <!-- Now I can utilize Javascript to change the interval at which these will switch. -->
+        <div id="spongeCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators or the slides we'll references below.
               <ol class="carousel-indicators">
                      <li data-target="#spongeCarousel" data-slide-to="0" class="active"></li>
                      <li data-target="#spongeCarousel" data-slide-to="1"></li>
                      <li data-target="#spongeCarousel" data-slide-to="2"></li>
               </ol>
                -->
-              <div class="carousel-inner">
-                  <div class="item active">
-                      <!-- <img src="..." alt="Stuff"> -->
-                      <p>"You must be the change you wish to see in the world." </p>
-                      <div class="container text-right">
-                                      <p> ~ Mahatma Gandhi</p>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <p> "I believe there are great things in store for those who work hard!" </p>
-                      <div class="container text-right">
-                                      <p> ~ Stephanie Miranda</p>
-                      </div>
-                  </div>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- <img src="..." alt="Stuff"> -->
+                    <p>"You must be the change you wish to see in the world." </p>
+                    <div class="container text-right">
+                        <p> ~ Mahatma Gandhi</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <p> "I believe there are great things in store for those who work hard!" </p>
+                    <div class="container text-right">
+                        <p> ~ Stephanie Miranda</p>
+                    </div>
+                </div>
 
-                  <div class="item">
-                      <p> "You manage things, you lead people. We went overboard on management and forgot about leadership" </p>
-                      <div class="container text-right">
-                                      <p> ~ Grace Hopper</p>
-                      </div>
-                  </div>
+                <div class="item">
+                    <p> "You manage things, you lead people. We went overboard on management and forgot about leadership." </p>
+                    <div class="container text-right">
+                        <p> ~ Grace Hopper</p>
+                    </div>
+                </div>
             </div>
 
-             <!-- Left and right controls -->
-             <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
-             </a>
-             <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
+            </a>
+            <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
-              </a>
-         </div>
+            </a>
+        </div>
     </div>
 
     <!-- This is the body of the page. -->
-    <div class="container-fluid text-center">
-        <h2>
-            <b>
-            Projects I've been apart of.
-            </b>
-        </h2>
-        <!-- This is the start of the Bootstrap grid. It contains rows with columns. -->
-        <div class="container-center bg-3 text-center">
-            <div class="row">
-                <!-- These make 3 columns!! -->
-                <div class="col-sm-4">
-                    <p>
-                        <!-- Adding in an image, just want to see how. -->
-                        <img src="img/WAMMole.jpg" alt="SacTownOwl"style="width:150px;height:175px">
-                        <!-- title is what appears, the message is what shows on the page. -->
-                        <!-- <p><a href="#" data-toggle="tooltip" title="Yippee!">Hover Here.</a></p> -->
-                        <p><a href="https://github.com/ASU-CodeDevils/WAM">WAM</a></p>
+    <div class="container-fluid message text-center">
+        <h2><b>You have found Stephanie Miranda's personal website. To find out more, check the links in the navigation bar. Each page covers a little about Stephanie's interests, projects and so much more!!
+            <br><br>Thanks for visiting!</br></br></b></h2>
 
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <p>
-                        <!-- Adding in an image, just want to see how. -->
-                        <img src="img/flashcardlogo.jpg" alt="FlashCardLogo"style="width:150px;height:175px">
-                        <p><a href="https://github.com/ASU-CodeDevils/FlashCards"> FlashCards App</a></p>
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <p>
-                        <!-- Adding in an image, just want to see how. -->
-                        <img src="img/codedevil.jpg" alt="CodeDevilsLink"style="width:125px;height:175px">
-                        <p><a href="http://www.codedevils.org/"> Check us out!</a></p>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- The projects that used to be here are now on the projects.html file. -->
 
     </div>
 
@@ -208,22 +147,26 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript " src="scripts/mainjsscripts.js "></script>
+
+    <!-- Allows menus to collapse/disappear. -->
     <script>
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
         });
     </script>
 
     <!--Creating a sticky footer to work on multiple browsers. -->
-     <div class="wrapper">
-         <div class="push"></div>
-     </div>
+    <div class="wrapper">
+        <div class="push"></div>
+    </div>
 
-     <!-- The text that appears in the footer. -->
-     <div class="footer">
-          <p>Written and maintained by Stephanie Miranda.</p>
-          <p>Last updated: November 2018 Copyright &copy; 2018</p>
-     </div>
+    <!-- The text that appears in the footer. -->
+    <div class="footer">
+        <p>Written and maintained by Stephanie Miranda.</p>
+        <p>Last updated: December 2018 Copyright &copy; 2018</p>
+    </div>
 
 </body>
+
 </html>

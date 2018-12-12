@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+
 <head lang="en">
-  <title>Stephanie Miranda/Projects</title>
+    <title>Stephanie Miranda/Projects</title>
     <!-- ** Find a way to change the tab image. -->
     <!-- The following meta need to come before anything else! -->
     <meta charset="UTF-8">
@@ -10,30 +11,125 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom Stylesheet(s) below. Note that bootstrap must always come first! -->
     <link rel="stylesheet" href="css/mainstylesheet.css">
-    <link rel="stylesheet" href="css/projectsstylesheet.css">
+    <link rel="stylesheet" href="css/projectsstyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Favicon. -->
+    <link href="img/smfavicon.ico" rel="icon" />
 </head>
 
+<!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+    <!--<div class="container-fluid header">
+        <div class="navbar-header" id="header">
+            -->
+    <!-- This is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
+    <a href="#" class="navbar-brand">Stephanie Miranda the Sponge of Things</a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#spongeNavbar" aria-controls="spongeNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!--</div> -->
+
+    <div class="collapse navbar-collapse" id="spongeNavbar">
+        <!-- The ul navbar-right class below nicely aligns dropdowns to the right of the navbar header.-->
+        <!-- 12/11: Find out how to get the hamburger menu to the right, and only visible on small screens.-->
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="aboutDrop">
+                    <a class="dropdown-item" href="/projects.html">Projects</a>
+                    <a class="dropdown-item" href="#hobbies">Hobbies</a>
+                    <a class="dropdown-item" href="#travel">Travel</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="linksDrop">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a>
+                    <a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a>
+                    <a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- 
+        This is the script that ought to control the mobile toggle for the nav bar in Bootstrap.
+    <script src="https://cdn.jsdelivr.net/bootstrap.native/1.0.4/bootstrap-native.js"></script>
+    -->
+    <!--<a href="javascript:void(0);" class="spongeNavbar" onclick="hamburgerFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+    -->
+</nav>
+
 <!-- Scrollspy that stays on left side of page as you scroll. -->
+
 <body data-spy="scroll" data-target="#myProjectList" data-offset="1">
-     <div class="container-fluid">
-          <div class="row">
-               <nav class="col-sm-3 col-4" id="myProjectList">
-                    <ul class="nave nav-pills flex-column">
-                         <li class="nav-item">
-                              <a class="nav-link active" href="#flashcards">FlashCards</a>
-                         </li>
-                    </ul>
-               </nav>
-               <div class="col-lg">
-                    <div class="title">
-                         <h3 class="mb-4">FlashCards</h3>
-                         <p>This is an Android app that lets users create and study sets of flash cards on the go.</p>
-                    </div>
-               </div>
-          </div>
-     </div>
+
+    <div class="container-fluid projTitle">
+        <div class="title">
+            <div class="row">
+                <h2><b>Projects</b></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid projects">
+        <!-- This is the start of the Bootstrap grid. It contains rows with columns. -->
+        <div class="container-center bg-3 text-center">
+            <div class="row">
+                <!-- These make 3 columns!! -->
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <!-- title is what appears, the message is what shows on the page. -->
+                        <!-- <p><a href="#" data-toggle="tooltip" title="Yippee!">Hover Here.</a></p> -->
+                        <p>
+                            <a href="https://github.com/ASU-CodeDevils/WAM">
+                                <img src="img/WAMMole.jpg" alt="SacTownOwl" style="width:150px;height:175px"></a>
+                        </p>
+
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <p>
+                            <a href="https://github.com/ASU-CodeDevils/FlashCards">
+                                <img src="img/flashcardlogo.jpg" alt="FlashCardLogo" style="width:150px;height:175px"></a>
+                        </p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <!-- Adding in an image, just want to see how. -->
+                        <p>
+                            <a href="http://www.codedevils.org/">
+                                <img src="img/codedevil.jpg" alt="CodeDevilsLink" style="width:125px;height:175px"></a>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Creating a sticky footer to work on multiple browsers. -->
+    <div class="wrapper">
+        <div class="push"></div>
+    </div>
+
+    <!-- The text that appears in the footer. -->
+    <div class="footer">
+        <p>Written and maintained by Stephanie Miranda.</p>
+        <p>Last updated: November 2018 Copyright &copy; 2018</p>
+    </div>
+
 
 
 </body>
+
+</html>
