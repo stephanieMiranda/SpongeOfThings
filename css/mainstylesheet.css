@@ -1,3 +1,5 @@
+/*These media queries will aid in hiding the hamburger menu based on screen size.*/
+
 .navbar inverse {
     margin-bottom: 0;
     border-radius: 0;

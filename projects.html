@@ -32,25 +32,25 @@
         <div class="collapse navbar-collapse" id="spongeNavbar">
             <!-- The ul navbar-right class below nicely aligns dropdowns to the right of the navbar header.-->
             <!-- 12/11: Find out how to get the hamburger menu to the right, and only visible on small screens.-->
-            <ul class="nav navbar-nav navbar-right">
+            <div class="nav navbar-nav navbar-right">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
-                    <div class="dropdown-menu" aria-labelledby="aboutDrop">
-                        <a class="dropdown-item" href="/projects.html">Projects</a>
-                        <a class="dropdown-item" href="#hobbies">Hobbies</a>
-                        <a class="dropdown-item" href="#travel">Travel</a>
-                    </div>
-                </li>
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
+                        <li><a class="dropdown-item" href="/projects.html">Projects</a></li>
+                        <li><a class="dropdown-item" href="#hobbies">Hobbies</a></li>
+                        <li><a class="dropdown-item" href="#travel">Travel</a></li>
+                    </ul>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
-                    <div class="dropdown-menu" aria-labelledby="linksDrop">
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a>
-                        <a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a>
-                        <a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a>
-                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="linksDrop">
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a></li>
+                        </ul>
+                    </li>
                 </li>
-            </ul>
+            </div>
         </div>
     </div>
 
