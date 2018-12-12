@@ -4,7 +4,22 @@
     margin-bottom: 0;
     border-radius: 0;
     height: 25px;
+    max-width: 75px;
+    min-width: 25px;
 }
+
+#spongeToggler {
+    background-color: darkgray;
+    align-content: flex-end;
+    margin: 10px;
+}
+
+
+/*
+button#spongeToggler.navbar-dark.navbar-dark {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+*/
 
 .jumbotron {
     background: radial-gradient(chocolate, firebrick);

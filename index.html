@@ -19,74 +19,50 @@
     <link href="img/smfavicon.ico" rel="icon" />
 </head>
 
+<!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
+<nav class="navbar navbar-expand-md bg-dark navbar-inverse fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" id="header">
+            <!-- This is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
+            <a href="#" class="navbar-brand">Stephanie Miranda the Sponge of Things</a>
+
+            <button id="spongeToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#spongeNavbar" aria-controls="spongeNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="spongeNavbar">
+            <!-- The ul navbar-right class below nicely aligns dropdowns to the right of the navbar header.-->
+            <!-- 12/11: Find out how to get the hamburger menu to the right, and (done 12/11)only visible on small screens.-->
+            <div class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
+                        <li><a class="dropdown-item" href="/projects.html">Projects</a></li>
+                        <li><a class="dropdown-item" href="#hobbies">Hobbies</a></li>
+                        <li><a class="dropdown-item" href="#travel">Travel</a></li>
+                    </ul>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="linksDrop">
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a></li>
+                        </ul>
+                    </li>
+                </li>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
 <body>
     <!-- 
         This is the styling to be utilized on the page. *Now in a mainstylesheet.css 
         The inline styling would be in tags <style></style>.
     -->
-    <header>
-        <!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <!-- this is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
-                    <a class="navbar-brand" href="#home">Stephanie Miranda the Sponge of Things
-                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span> 
-                        <span class="ican-bar"></span>
-                        <span class="ican-bar"></span>
-                        <span class="ican-bar"></span>
-                        </button> -->
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="collapse navbar-collapse" id="spongeNavbar">
-                <div class="nav navbar-nav navbar-right">
-                    <li class="nav-item btn-group">
-                        <a class="nav-link dropdown-toggle" href="#about" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
-                            <li><a class="dropdown-item" role="menuitem" href="/projects.html">Projects</a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="#hobbies">Hobbies</a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="#travel">Travel</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item btn-group">
-                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="linksDrop">
-                            <li><a class="dropdown-item" role="menuitem" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
-                            <li><a class="dropdown-item" role="menuitem" href="https://www.codedevils.org/">CodeDevils  </a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
-            <!--
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
-                <i class="fa fa-bars"></i>
-            </a>
-            </div>
-            -->
-        </nav>
-        <!-- This is a CSS navigation bar.
-            <div class="topnav" id="spongeTopNav">
-                <a href="#home" class="active">Stephanie The Sponge of Things</a>
-                These are the "buttons" in the hamburger menu.
-                <div id="spongeLinks">
-                    <a href="#about">About</a>
-                    <a href="#/projects.html">Projects</a>
-                    <a href="#proLinks">Professional Links</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        -->
-    </header>
 
     <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
     <div class="jumbotron jumbotron-fluid">
