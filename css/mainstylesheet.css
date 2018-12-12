@@ -4,16 +4,6 @@
     height: 25px;
 }
 
-.navbar nav>ul>li>a {
-    background-color: aqua;
-    border-radius: 3rem;
-    color: rgba(0, 0, 0, .25);
-    font-size: 0.75em;
-    font-weight: 500;
-    padding: 2px 8px;
-    text-transform: lowercase;
-}
-
 .jumbotron {
     background: radial-gradient(chocolate, firebrick);
     text-align: center;
