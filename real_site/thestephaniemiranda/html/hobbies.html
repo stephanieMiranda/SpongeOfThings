@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SM | Hobbies</title>
+    <!-- The following meta need to come before anything else! -->
+    <meta http-equiv="Content Type" content="text/html; charset=UTF-8">
+    <!-- The screen/window area. -->
+    <meta name="viewport" content="width=device-width, initial-1scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jquery must come before the bootstrap! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Custom Stylesheet(s) below. Note that bootstrap must always come first!-->
+    <link rel="stylesheet" href="../styled/mainstylesheet.css?version:1">
+    <link rel="stylesheet" href="../styled/hobbiesstyle.css?version:1">
+    <!-- Favicon. -->
+    <link href="../img/new_eyedeas.ico" rel="icon" />
+</head>
+
+<body>
+    <div class="myProjBackground">
+        <!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-inverse fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" id="header">
+            <!-- This is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
+            <a href="../../index.html" class="navbar-brand">Stephanie Miranda</a>
+                    
+            <i class="fa fa-navicon pull-right" style="font-size:18px;background-color:#FFCC33;border:none;border-radius:7px;outline:0;margin:15px 20px 20px 0px;">
+                <button class="navbar-toggler hidden-lg hidden-md hidden-sm navbar-right" id="spongeToggler" type="button" data-toggle="collapse" data-target="#spongeNavbar" aria-controls="spongeNavbar" aria-expanded="false" style="background-color:#FFCC33;border:none;outline:0;">
+                <span sr-only><i class="fa fa-bars fa-1x"></i></span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar mid-bar"></span>
+                <span class="icon-bar low-bar"></span>
+                </button>
+             </i>
+        </div>
+        
+        
+        <div class="collapse navbar-collapse" id="spongeNavbar">
+            <!-- The ul navbar-right class below nicely aligns dropdowns to the right of the navbar header.-->
+            <!-- 12/11: Find out how to get the hamburger menu to the right, and (done 12/11)only visible on small screens.-->
+            <div class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
+                        <li><a class="dropdown-item" href='../html/projects.html'>Projects</a></li>
+                        <li><a class="dropdown-item" href="../html/hobbies.html">Hobbies</a></li>
+                        <li><a class="dropdown-item" href="../html/travel.html">Travel</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="linksDrop">
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="parallaxWrapper">
+    <!--Parallax effects on projects. -->
+    <div class="parallax-top">
+        <div class="top-section">
+            <div class="center-block" id="descriptContainer">
+                <div class="projectLinks">
+                    <p><h5>Baking is such a relaxing thing!</h5></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="barInfo">
+        <div class="center-block-info">
+            <p class="bio"><h5>I like to bake all sorts of things! I will share receipes I find here.</h5></p>
+        </div>
+    </div>
+    
+    <div class="parallax-mid">
+        <div class="mid-section">
+            <div class="center-block" id="descriptContainer">
+                <div class="projectLinks">
+                    <p><h5>Camping in such beauty makes my soul smile!</h5></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="barInfo">
+        <div class="center-block-info">
+            <p class="bio"><h5>With an awesome three season tent, we try to get out doors and camp as often as possible.</h5></p>
+        </div>
+    </div>
+    
+    <div class="parallax-bottom">
+        <div class="bottom-section">
+            <div class="center-block" id="descriptionContainer">
+                <div class="projectLinks">
+                    <p><h5>Fresh ingredients make the everything taste better.</h5></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="barInfo">
+        <div class="bott-center-block-info">
+            <p class="bio"><h5>Heading to the Farmers market is one of my favorite ways to get ingredients for new and exciting receipes.</h5></p>
+        </div>
+    </div>
+</div>
+<!--end of parallax.-->
+
+
+    <!--Creating a sticky footer to work on multiple browsers. -->
+     <div class="wrapper">
+         <div class="push"></div>
+     </div>
+
+     <!-- The text that appears in the footer. -->
+     <div class="footer">
+          <p>Written and maintained by Stephanie Miranda.</p>
+          <p>Last updated: March 2019 Copyright &copy; 2018</p>
+     </div>
+
+</div>
+</body>
+</html>

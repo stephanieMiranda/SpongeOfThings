@@ -1,0 +1,180 @@
+.myProjBackground {
+    background-color:silver;
+}
+
+.title {
+    width: 100%;
+    text-align:center;
+}
+
+div.container-fluid.projTitle {
+    background: rgba(169, 3, 41, 1); /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(169, 3, 41, 1)), color-stop(30%, rgba(178, 34, 34, 1)), color-stop(61%, rgba(192, 66, 32, 1)), color-stop(99%, rgba(210, 105, 30, 1))); /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#d2691e', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    border-radius:10px;
+    width: 95%;
+    margin:10px;
+}
+.parallax-top {
+    background-image:url("/img/Baking.jpg");
+    height: 375px;
+    max-width: 100%;
+    opacity:0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    /*Parallax scrolling effect.*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -20px 0px 0px 0px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.parallax-mid {
+    background-image:url("/img/BeautifulSunSetCamping.jpg");
+    height: 350px;
+    max-width:100%;
+    opacity:0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    /*Parallax scrolling effect.*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px 0px 0px 0px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.parallax-bottom {
+    background-image:url("/img/FreshCooking.jpg");
+    height: 350px;
+    max-width:100%;
+    opacity:0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    /*Parallax scrolling effect.*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px 0px 0px 0px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.center-block{
+    width: 75%;
+    min-height: 75px;
+    max-height: 250px;
+    background-color: black;
+    opacity :0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    align-self: center;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.barInfo {
+    margin:65px 25px 25px 5px;
+}
+
+.center-block-info{
+    width: 100%;
+    min-height: 50px;
+    max-height: 450px;
+    height: 75px;
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    align-self: center;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.bott-center-block-info {
+    width: 100%;
+    min-height: 50px;
+    max-height: 450px;
+    height: 195px;
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    align-self: center;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.bio {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.projectLinks, a:link, a:visited, a:focus {
+    text-decoration: none;
+    color:white;
+    border: none;
+    outline: 0;
+}
+
+.projectLinks, a:hover, a:active {
+    text-decoration: none;
+    color:gainsboro;
+    border: none;
+    outline: 0;
+}
+
+/*This helps with mobile devices and scrolling with parallax.*/
+@media only screen and (max-device-width: 600px) {
+    .parallax-SER416 {
+        background-attachment: scroll;
+    }
+    
+    .parallax-CD {
+        background-attachment: scroll;
+    }
+    
+    .parallax-FlashCards {
+        background-attachment: scroll;
+    }
+    
+    .parallax-WAM {
+        background-attachment: scroll;
+    }
+    
+    .barInfo {
+         margin:75px 25px;
+    }
+    
+    .center-block-info{
+        width: 100%;
+        min-height: 50px;
+        max-height: 450px;
+        height: 75px;
+        opacity: 0.75;
+        filter: alpha(opacity=75); /* For IE8 and earlier */
+        align-self: center;
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+    }
+    
+    .bio {
+        margin-left: 25px;
+        margin-right:25px;
+    }
+    
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stephanie Miranda</title>
+    <!-- The following meta need to come before anything else! -->
+    <meta http-equiv="Content Type" content="text/html; charset=UTF-8">
+    <!-- The screen/window area. -->
+    <meta name="viewport" content="width=device-width, initial-1scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jquery must come before the bootstrap! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Custom Stylesheet(s) below. Note that bootstrap must always come first!-->
+    <link rel="stylesheet" href="styled/mainstylesheet.css?version:1">
+    <!-- Favicon. -->
+    <link href="img/new_eyedeas.ico" rel="icon" />
+</head>
+
+<body>
+    <div class="myBackground">
+<!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
+<nav class="navbar navbar-expand-md bg-dark navbar-inverse fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" id="header">
+            <!-- This is an anchor tag. The href creates a clickable link, or can be a "go here" signal.-->
+            <a href="#home" class="navbar-brand">Stephanie Miranda</a>
+                    
+            <i class="fa fa-navicon pull-right" style="font-size:18px;background-color:#FFCC33;border:none;border-radius:7px;outline:0;margin:15px 20px 20px 0px;">
+                <button class="navbar-toggler hidden-lg hidden-md hidden-sm navbar-right" id="spongeToggler" type="button" data-toggle="collapse" data-target="#spongeNavbar" aria-controls="spongeNavbar" aria-expanded="false" style="background-color:#FFCC33;border:none;outline:0;">
+                <span sr-only><i class="fa fa-bars fa-1x"></i></span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar mid-bar"></span>
+                <span class="icon-bar low-bar"></span>
+                </button>
+             </i>
+        </div>
+        
+        
+        <div class="collapse navbar-collapse" id="spongeNavbar">
+            <!-- The ul navbar-right class below nicely aligns dropdowns to the right of the navbar header.-->
+            <!-- 12/11: Find out how to get the hamburger menu to the right, and (done 12/11)only visible on small screens.-->
+            <div class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
+                        <li><a class="dropdown-item" href='../html/projects.html'>Projects</a></li>
+                        <li><a class="dropdown-item" href="../html/hobbies.html">Hobbies</a></li>
+                        <li><a class="dropdown-item" href="../html/travel.html">Travel</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Professional Links<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="linksDrop">
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/stephanieemiranda/">Linkedin  <span><i class="fab fa-linkedin"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/stephanieMiranda">GitHub  <span><i class="fab fa-github"></i></span></a></li>
+                            <li><a class="dropdown-item" href="https://www.codedevils.org/">CodeDevils  </a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
+    <div class="jumbotron jumbotron-fluid">
+          <div id="spongeCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <!-- <img src="..." alt="Stuff"> -->
+                      <p>"You must be the change you wish to see in the world." </p>
+                      <div class="container text-right">
+                                      <p> ~ Mahatma Gandhi</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <p> "I believe there are great things in store for those who work hard!" </p>
+                      <div class="container text-right">
+                                      <p> ~ Stephanie Miranda</p>
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <p> "You manage things, you lead people. We went overboard on management and forgot about leadership" </p>
+                      <div class="container text-right">
+                                      <p> ~ Grace Hopper</p>
+                      </div>
+                  </div>
+            </div>
+               <!-- Left and right controls -->
+                <div class="btn-group btn-group-justified inline" role="group">
+                    <div class="btn-group" role="group">
+                         <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                         </a>
+                     </div>
+                     <div class="btn-group" role="group">
+                     <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      </div>
+                </div>
+         </div>
+    </div>
+    
+     <!-- This is the MAIN BODY CONTENTS.-->
+    <!-- This is the body of the page. -->
+    <div class="container-fluid message text-center">
+        <div class="intro">
+        <!--<h2><b>You have found Stephanie Miranda's personal website. To find out more, check the links in the navigation bar. Each page covers a little about Stephanie's interests, projects and so much more!!
+            <br><br>Thanks for visiting!</br></br></b></h2>-->
+         </div>
+        <!-- The projects that used to be here are now on the projects.html file. -->
+    </div>
+    
+    <!-- This is the title section for Following Zig iter.-->
+    <div class="contentContainer">
+        <!--<a class="anchor" id="titleBar"></a>
+        <div class="title">
+            <h1 class="display-4 my-5 text-center"></h1>
+        </div>
+        -->
+        
+        <!-- Zig-Zag layout -->
+        <div class="zigWrapper">
+            <div class="row my-5">
+                <div class="col-md">
+                    <div class="column-33">
+                        <h3 class="mb-5 text-left">Hello My Name is...</h3>
+                        <!--<a class="meLink" href="#me" role="button" id="meLink">-->
+                        <div class="meImg">
+                            <img alt="ProfPic" class="mb-5 img-fluid rounded d-none d-sm-block" src="img/frontMe.png" />
+                        </div>
+                            
+                        <!--</a>-->
+    
+                    </div>
+    
+                    <div class="column-66" id="descript">
+                        <div class="descriptBox">
+                            <h3 class="mb-5 text-left"> </h3>
+                            <p>
+                                <!--<h4 class="mb-4">
+                                    Lorem ipsum dolor sit amet, cum in mundi audire abhorreant, quidam aeterno an mel. Eu assueverit scripserit liberavisse vim, per te labore denique. Cu pro dolores aliquando. Quot deserunt an per, duo vero maiorum in. Tollit petentium dissentias mel cu,
+                                    populo facilisi ne qui, eam iisque feugiat luptatum eu. Ut senserit assentior mei, quando indoctum vel cu.</h4>
+                                    -->
+                                    <h2><b>You have found Stephanie Miranda's personal website. To find out more, check the links in the navigation bar. Each page covers a little about Stephanie's interests, projects and so much more!!
+                <br><br>Thanks for visiting!</br></br></b></h2>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row my-5 spaceBar">
+            
+        </div>
+        
+        <!--
+        <div class="row my-5">
+            <div class="col-md">
+                <div class="column-33" id="descript">
+                    <h3 class="mb-5 text-left"> </h3>
+                    <p>
+                        <h4 class="mb-4">Sample Text</h4>
+                    </p>
+                </div>
+                <div class="column-66">
+                    <h3 class="mb-4 text-left"></h3>
+                    <a class="donLink" href="#" role="button" id="Link">
+                        <img alt="Image" class="mb-5 img-fluid rounded d-none d-sm-block pull-right" src="" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <!-- End of ZZ layout. -->
+    </div>
+    
+     <!-- Not sure this section is necessary, but will leave it.
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     -->
+    <!-- This script below makes sure the dropdown menus disappear after clicking away from the menue itself. (Anywhere).
+    <script>
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+            });
+        </script>
+         -->
+  
+    <div class="footer">
+        <!--<footer id="footer" class="container-fluid text-center"> -->
+            <p>Written and maintained by Stephanie Miranda.</p>
+            <p>Last updated: March 2019 Copyright &copy; 2018</p>
+        <!-- </footer> 12/18, -->
+    </div>
+</body>
+</html>
