@@ -1,109 +1,203 @@
 /*Cross browser CSS styling from www.cssmatic.com/*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
     border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 
 /* CSS theme. Loosely follows Google Material Design.*/
-/*:root {
-    --background: wheat;
-}
-*/
 
-body,html {
-    height:100%;
+:root {
+    --background: #FFCCBC;
+    --primary: #B22222;
+    --pLight: #EB584B;
+    --pDark: #7B0000;
+    --secondary: #D2691E;
+    --sLight: #FF984D;
+    --sDark: #9B3C00;
+    --pText: #FFFFFF;
+    --sText: #000000;
+    --surface: #E3F2FD;
+    --error: #BF360C;
+    --shadow: #BDBDBD;
+    --floatingShadow: #BDBDBD;
+    /*--buttonP: #FCEABB;
+    --bPDark: #FCCD4D;
+    --bPLight: #FBDF93;
+    --formFrame: #bcfaff;*/
+    --navToggler: #7AFAEE;
 }
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
 
 /********************************** TEXT FORMATTING ************************/
-        
+
 h1 {
-    font-size:18px;
-    font:bold;
+    font-size: 18px;
+    font: bold;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     color: var(--pLight);
     text-transform: uppercase;
     font-weight: bold;
 }
-    
+
 h2 {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    font:bold;
-    color:black;
-    font-size:25px;
-    
+    font: bold;
+    color: black;
+    font-size: 25px;
 }
-        
-h3{
-    font-size:15; 
+
+h3 {
+    font-size: 15;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    color: var(--pText);
+    color: var(--sText);
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 2px 2px 2px var(--shadow);
+    text-shadow: 2px 2px 2px var(--floatingShadow);
 }
 
 h4 {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    font:bold;
-    color:black;
-    font-size:25px;
+    font: bold;
+    color: black;
+    font-size: 25px;
 }
-        
+
 p {
-    font-style:italic;
-    font-size:12px;
+    font-style: italic;
+    font-size: 12px;
 }
+
 
 /**************************** BODY ***************************************/
 
 .myBackground {
-    background-image: url("/img/CaliSunSet.jpg");
-    background-size:100% 100%;
-    opacity:0.75;
-    filter: alpha(opacity=75); /* For IE8 and earlier */
-    /*background-size: cover; 
+    /*
+        THIS IS NEEDED FOR ACTUAL WEB HOSTING. 
+    */
+    background-image: url("https://www.thestephaniemiranda.com/img/CaliSunSet.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-size: 100% 100%;
+    /*opacity:0.75;
+    filter: alpha(opacity=75); */
+    /* For IE8 and earlier */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height:100%;
-    Allows the image to be resized with the window it's contained in, regardless of browser or device. */
+    /*Allows the image to be resized with the window it's contained in, regardless of browser or device. */
     /*background-color:var(--background);*/
 }
 
-.navbar inverse{
+.navbar inverse {
     margin-bottom: 0;
     border-radius: 0;
-    height:25px;
+    height: 25px;
     max-width: 75px;
     min-width: 25px;
 }
 
 .navbar-brand {
-    font-family:'Tahoma', Tahoma, Helvetics, sans-serif;
-    font-size:18px;
-    margin-top:10px;
+    font-family: 'Tahoma', Tahoma, Helvetics, sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 .navbar-right {
-    font-family:'Tahoma', Tahoma, Helvetics, sans-serif;
-    font-size:18px;
+    font-family: 'Tahoma', Tahoma, Helvetics, sans-serif;
+    font-size: 20px;
     margin: 10px;
 }
 
@@ -117,6 +211,7 @@ fa-navicon {
     border: none;
 }
 
+
 /************************************ JUMBOTRON ****************************/
 
 .jumbotron {
@@ -125,11 +220,11 @@ fa-navicon {
     padding: 25px 25px 25px;
     font: bold;
     font: 15px;
-    min-height:200px;
+    min-height: 250px;
 }
 
 .courousel {
-    margin-top:10px;
+    margin-top: 5px;
 }
 
 .carousel-control {
@@ -139,27 +234,46 @@ fa-navicon {
 }
 
 container.text-right {
-    margin:25px;
+    margin: 25px;
 }
+
+#spongeCarousel {
+    margin: 55px 10px 5px;
+}
+
 
 /***THIS IS THE BEIGE BOX. *****/
+
 div.container-fluid.message {
-    background: rgba(255,227,194,1);/* Old Browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,227,194,1)), color-stop(55%, rgba(255,227,194,0.86)), color-stop(99%, rgba(210,102,30,0.75)), color-stop(100%, rgba(210,102,30,0.75)));/* Chrome, Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* Opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* IE 10+ */
-    background: radial-gradient(ellipse at center, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
     border-radius: 10px;
     /*width:95%;*/
-    width:inherit;
-    margin:25px;
-    align-self:center;
+    width: inherit;
+    margin: 25px;
+    align-self: center;
+    /*If I put a title bar in it'll go here.
+    box-shadow: 0px 2px 2px 2px var(--shadow);
+    */
+    background: rgba(255, 227, 194, 1);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 227, 194, 1)), color-stop(55%, rgba(255, 227, 194, 0.86)), color-stop(99%, rgba(210, 102, 30, 0.75)), color-stop(100%, rgba(210, 102, 30, 0.75)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
+
 /***************************** MAIN BODY CONTENTS ***************************/
+
 
 /*section title*/
 
@@ -175,58 +289,82 @@ div.container-fluid.message {
     max-width: 100%;
 }
 
+
 /*profilePic*/
+
 .meLink {
-    display:block;
+    display: block;
     align-content: center;
     border-radius: 4px;
     /*min-width: 75px;
     min-height:225px;*/
-    height:auto;
+    height: auto;
     width: auto;
-    box-shadow: 5px 5px 5px var(--shadow);
+    box-shadow: 2px 2px 2px var(--shadow);
     margin: 0 auto;
 }
 
-/*.meLink.resize {
-    max-width:75px;
-    max-height:225px;
-    width:inherit;
-    height:inherit;
+.meImg.resize {
+    max-width: 75px;
+    max-height: 225px;
+    width: inherit;
+    height: inherit;
 }
-*/
+
+
+/*This is a block under the ProfPic.*/
 
 .meImg {
-    display:inline-block;
-    margin:0 auto;
+    display: inline;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
     /*margin:10px;*/
     /*background-color:lightskyblue;*/
-    padding:5px 5px 5px;
-    border-radius:4px;
+    /*padding:5px 5px 5px 5px;*/
+    border-radius: 4px;
 }
+
+#meImg {
+    /*margin:5px;
+    background-color:hotpink;*/
+    width: 95%;
+    height: 100%;
+}
+
+.img-fluid {
+    border-radius: 4px;
+    /*background-color:lightskyblue;*/
+    /*opacity:0.75;
+    filter: alpha(opacity=75); */
+    /* For IE8 and earlier */
+}
+
 
 /*Zig Zag Styling.*/
 
 .contentContainer {
-    display: inline-blockblock;
-    margin:0 auto;
+    display: block;
+    margin: 0 auto;
     /*width: 800px;
     height: 600px;
     max-width: 75%;
     max-height: 75%;
     box-shadow: var(--shadow);*/
-    padding: 15px;
+    padding: 5px 5px;
     background-blend-mode: color-burn;
-    padding:25px;
-    width:85%;
+    width: 95%;
 }
 
+
 /* Settings for zig-zag layout. */
+
+
 /* 2/3 column */
 
 .column-66 {
     float: left;
-    width: 66.66666%;
+    width: 66%;
     padding: 5px;
 }
 
@@ -235,66 +373,73 @@ div.container-fluid.message {
 
 .column-33 {
     float: left;
-    width: 33.33333%;
+    width: 33%;
     padding: 5px;
 }
 
 .descriptBox {
-    display:inline-block;
-    margin:0 auto;
+    display: inline;
+    margin: 0 auto;
     /*margin:10px;*/
     /*background-color:lightskyblue;*/
-    border-radius:4px;
+    border-radius: 4px;
+    /*box-shadow: 0px 2px 2px 2px var(--floatingShadow);*/
 }
 
 #descript {
-    margin-top: 25px;
+    margin-top: 55px;
     max-height: fit-content;
     /*border-radius: 10px;*/
     /*align-self:center;*/
-    display:inline-block;
-    
-    background: rgba(255,227,194,1);/* Old Browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,227,194,1)), color-stop(55%, rgba(255,227,194,0.86)), color-stop(99%, rgba(210,102,30,0.75)), color-stop(100%, rgba(210,102,30,0.75)));/* Chrome, Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* Opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%); /* IE 10+ */
-    background: radial-gradient(ellipse at center, rgba(255,227,194,1) 0%, rgba(255,227,194,0.86) 55%, rgba(210,102,30,0.75) 99%, rgba(210,102,30,0.75) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
-    /*width:95%;*/
-} 
-
+    display: inline;
+    border-radius: 4px;
+    background: rgba(255, 227, 194, 1);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 227, 194, 1)), color-stop(55%, rgba(255, 227, 194, 0.86)), color-stop(99%, rgba(210, 102, 30, 0.75)), color-stop(100%, rgba(210, 102, 30, 0.75)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
 
 .spaceBar {
-    height:75px;
-    width:100%;
-    opactiy:0%;
+    height: 75px;
+    width: 100%;
+    opactiy: 0%;
 }
+
 
 /******************************* FOOTER SECTION ************************/
 
 .wrapper {
     min-height: 100%;
-    height: auto !important:
-    height: 100%;
+    height: auto !important: height: 100%;
     margin: 0 auto -14px;
 }
-        
-.footer, .push {
-    height:75;
-    background-color:black;
+
+.footer,
+.push {
+    height: 75;
+    background-color: black;
     background-blend-mode: color;
     font-family: 'Palatino Linotype', Arial, Helvetica, sans-serif;
-    color:white;
+    color: white;
     text-align: center;
-    
 }
 
+
 /************************* MEDIA QUERIES ***********************************/
- 
-   
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 950px) {
     .column-66,
     .column-33 {
         width: 100%;
@@ -307,14 +452,13 @@ div.container-fluid.message {
 
 
 /*This helps with mobile devices and scrolling with parallax.*/
+
 @media only screen and (max-device-width: 600px) {
-  
-  .footer, .push {
-      min-height: 20px;
-      max-height: 35px;
-  }
-  
-  .column-66,
+    .meImg {
+        max-width: 250;
+        max-height: auto;
+    }
+    .column-66,
     .column-33 {
         width: 100%;
         text-align: center;
@@ -322,5 +466,9 @@ div.container-fluid.message {
     .col-md {
         border-bottom: 2px solid var(--bPDark);
     }
-    
+    .footer,
+    .push {
+        min-height: 20px;
+        max-height: 35px;
+    }
 }

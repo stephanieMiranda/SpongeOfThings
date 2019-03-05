@@ -1,101 +1,114 @@
 .myProjBackground {
-    background-color:silver;
+    background-color: silver;
 }
 
 .title {
     width: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 div.container-fluid.projTitle {
-    background: rgba(169, 3, 41, 1); /* Old Browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(169, 3, 41, 1)), color-stop(30%, rgba(178, 34, 34, 1)), color-stop(61%, rgba(192, 66, 32, 1)), color-stop(99%, rgba(210, 105, 30, 1))); /* Chrome, Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* Opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* IE 10+ */
-    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#d2691e', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-    border-radius:10px;
+    background: rgba(169, 3, 41, 1);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(169, 3, 41, 1)), color-stop(30%, rgba(178, 34, 34, 1)), color-stop(61%, rgba(192, 66, 32, 1)), color-stop(99%, rgba(210, 105, 30, 1)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 0%, rgba(178, 34, 34, 1) 30%, rgba(192, 66, 32, 1) 61%, rgba(210, 105, 30, 1) 99%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#d2691e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 10px;
     width: 95%;
-    margin:10px;
+    margin: 10px;
 }
 
 .parallax-SER416 {
-    background-image:url("/img/SchoolToLearn.jpg");
+    background-image: url("https://www.thestephaniemiranda.com/img/SchoolToLearn.jpg");
     height: 375px;
     max-width: 100%;
-    opacity:0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
     /*Parallax scrolling effect.*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: -20px 0px 0px 0px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .parallax-CD {
-    background-image:url("/img/PuzzlePieces.jpg");
+    background-image: url("https://www.thestephaniemiranda.com/img/PuzzlePieces.jpg");
     height: 350px;
     max-width: 100%;
-    opacity:0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
     /*Parallax scrolling effect.*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: -20px 0px 0px 0px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .parallax-FlashCards {
-    background-image:url("/img/AndroidWorldWide.jpg");
+    background-image: url("https://www.thestephaniemiranda.com/img/AndroidWorldWide.jpg");
     height: 350px;
-    max-width:100%;
-    opacity:0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    max-width: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
     /*Parallax scrolling effect.*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 100px 0px 0px 0px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .parallax-WAM {
-    background-image:url("/img/KeyBoardBlur.jpg");
+    background-image: url("https://www.thestephaniemiranda.com/img/KeyBoardBlur.jpg");
     height: 350px;
-    max-width:100%;
-    opacity:0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    max-width: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
     /*Parallax scrolling effect.*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 100px 0px 0px 0px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.center-block{
+.center-block {
     width: 75%;
     min-height: 75px;
     max-height: 250px;
     background-color: black;
-    opacity :0.75;
-    filter: alpha(opacity=75); /* For IE8 and earlier */
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    /* For IE8 and earlier */
     align-self: center;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -104,16 +117,17 @@ div.container-fluid.projTitle {
 }
 
 .barInfo {
-    margin:65px 25px 25px 5px;
+    margin: 65px 25px 25px 5px;
 }
 
-.center-block-info{
+.center-block-info {
     width: 100%;
     min-height: 50px;
     max-height: 450px;
     height: 125px;
     opacity: 0.75;
-    filter: alpha(opacity=75); /* For IE8 and earlier */
+    filter: alpha(opacity=75);
+    /* For IE8 and earlier */
     align-self: center;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -127,7 +141,8 @@ div.container-fluid.projTitle {
     max-height: 450px;
     height: 195px;
     opacity: 0.75;
-    filter: alpha(opacity=75); /* For IE8 and earlier */
+    filter: alpha(opacity=75);
+    /* For IE8 and earlier */
     align-self: center;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -140,55 +155,57 @@ div.container-fluid.projTitle {
     margin-right: 50px;
 }
 
-.projectLinks, a:link, a:visited, a:focus {
+.projectLinks,
+a:link,
+a:visited,
+a:focus {
     text-decoration: none;
-    color:white;
+    color: white;
     border: none;
     outline: 0;
 }
 
-.projectLinks, a:hover, a:active {
+.projectLinks,
+a:hover,
+a:active {
     text-decoration: none;
-    color:gainsboro;
+    color: gainsboro;
     border: none;
     outline: 0;
 }
+
 
 /*This helps with mobile devices and scrolling with parallax.*/
+
 @media only screen and (max-device-width: 600px) {
     .parallax-top {
         background-attachment: scroll;
     }
-    
     .parallax-mid {
         background-attachment: scroll;
     }
-    
     .parallax-bottom {
         background-attachment: scroll;
     }
-    
     .barInfo {
-         margin:75px 25px;
+        margin: 75px 25px;
     }
-    
-    .center-block-info{
+    .center-block-info {
         width: 100%;
         min-height: 50px;
         max-height: 450px;
         height: 175px;
         opacity: 0.75;
-        filter: alpha(opacity=75); /* For IE8 and earlier */
+        filter: alpha(opacity=75);
+        /* For IE8 and earlier */
         align-self: center;
         font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
         font-size: 20px;
         color: black;
         text-align: center;
     }
-    
     .bio {
         margin-left: 25px;
-        margin-right:25px;
+        margin-right: 25px;
     }
-    
 }
