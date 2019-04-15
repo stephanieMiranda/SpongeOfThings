@@ -1,0 +1,702 @@
+/*Cross browser CSS styling from www.cssmatic.com/*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* CSS theme. Loosely follows Google Material Design.*/
+
+:root {
+    --background: #3f3f3f;
+    /*gradient with #9e9c9e*/
+    --primary: #B22222;
+    --pLight: #EB584B;
+    --pDark: #7B0000;
+    --secondary: #D2691E;
+    --sLight: #FF984D;
+    --sDark: #9B3C00;
+    --pText: #FFFFFF;
+    --sText: #000000;
+    --surface: #E3F2FD;
+    --error: #BF360C;
+    --shadow: #3F3f3F;
+    --floatingShadow: #3F3f3F;
+    /*--shadow: #BDBDBD;
+    --floatingShadow:#BDBDBD;
+    --buttonP: #FCEABB;
+    --bPDark: #FCCD4D;
+    --bPLight: #FBDF93;
+    --formFrame: #bcfaff;*/
+    --navToggler: #7AFAEE;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+.body,
+.html {
+    height: auto;
+    width: auto;
+}
+
+
+/********************************** TEXT FORMATTING ************************/
+
+h1 {
+    font-size: 40px;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--pText);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 15;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--sText);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--floatingShadow);
+}
+
+h4 {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font: bold;
+    color: black;
+    font-size: 25px;
+}
+
+p {
+    font-size: 12px;
+}
+
+#heroBanner {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--pText);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+}
+
+#heroText {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--pText);
+    font-weight: bold;
+    margin: 10px;
+}
+
+#descriptBanner {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--sText);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+#descriptText {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    color: var(--sText);
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/********************************** BOOTSTRAP GRID ************************/
+
+.row {
+    width: auto;
+    height: 450px;
+    margin: 0px 5px;
+}
+
+
+/**************************** BODY ***************************************/
+
+.myBackground {
+    /*background-image: url("/img/CaliSunSet.jpg");*/
+    width: 100%;
+    height: auto;
+    background: rgb(158, 156, 158);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgb(158, 156, 158) 0%, rgb(63, 63, 63) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgb(158, 156, 158)), color-stop(100%, rgb(63, 63, 63)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(158, 156, 158) 0%, rgb(63, 63, 63) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgb(158, 156, 158) 0%, rgb(63, 63, 63) 100%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgb(158, 156, 158) 0%, rgb(63, 63, 63) 100%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgb(158, 156, 158) 0%, rgb(63, 63, 63) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e9c9e', endColorstr='#3f3f3f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    /*background-size:100% 100%;*/
+    /*opacity:0.75;
+    filter: alpha(opacity=75); */
+    /* For IE8 and earlier */
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    Allows the image to be resized with the window it's contained in, regardless of browser or device. */
+    /*background-color:var(--background);*/
+}
+
+.navbar inverse {
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 25px;
+    max-width: 75px;
+    min-width: 25px;
+}
+
+.navbar-brand {
+    font-family: 'Tahoma', Tahoma, Helvetics, sans-serif;
+    font-size: 24px;
+    /*margin-top:10px;*/
+}
+
+.navbar-right {
+    font-family: 'Tahoma', Tahoma, Helvetics, sans-serif;
+    font-size: 20px;
+    /*margin: 10px;*/
+}
+
+fa-navicon {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#spongeToggler {
+    background-color: firebrick;
+    border: none;
+}
+
+
+/************************************ JUMBOTRON ****************************/
+
+.jumbotron {
+    background: radial-gradient(chocolate, firebrick);
+    text-align: center;
+    padding: 25px 25px 25px;
+    font: bold;
+    font: 15px;
+    min-height: 250px;
+}
+
+.courousel {
+    margin-top: 5px;
+}
+
+.carousel-control {
+    /*background-image: none !important;
+    filter: none !important;*/
+    opacity: 0.5;
+}
+
+container.text-right {
+    margin: 25px;
+}
+
+#spongeCarousel {
+    margin: 55px 10px 5px;
+}
+
+
+/***THIS IS THE BEIGE BOX. *****/
+
+div.container-fluid.message {
+    border-radius: 10px;
+    /*width:95%;*/
+    width: inherit;
+    margin: 25px;
+    align-self: center;
+    /*If I put a title bar in it'll go here.
+    box-shadow: 0px 2px 2px 2px var(--shadow);
+    */
+    background: rgba(255, 227, 194, 1);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 227, 194, 1)), color-stop(55%, rgba(255, 227, 194, 0.86)), color-stop(99%, rgba(210, 102, 30, 0.75)), color-stop(100%, rgba(210, 102, 30, 0.75)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/***************************** MAIN BODY CONTENTS ***************************/
+
+
+/*hero image*/
+
+.hero-image {
+    background-image: url("/img/CaliSunSet2.png");
+    background-repeat: none;
+    background-size: cover;
+    /* Set a specific height */
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    -webkit-transform: translate(0%, 300%);
+    -moz-transform: translate(0%, 300%);
+    -ms-transform: translate(0%, 300%);
+    -o-transform: translate(0%, 300%);
+    transform: translate(0%, 300%);
+}
+
+
+/*section title*/
+
+.title {
+    /*Can make these sticky headers. */
+    background: var(--radial);
+    box-shadow: 5px 5px 5px var(--shadow);
+    border-radius: 4px;
+    align-content: center;
+    min-height: 15px;
+    max-height: 50px;
+    height: inherit;
+    max-width: 100%;
+}
+
+
+/*profilePic*/
+
+.meLink {
+    display: block;
+    align-content: center;
+    border-radius: 4px;
+    /*min-width: 75px;
+    min-height:225px;*/
+    height: auto;
+    width: auto;
+    box-shadow: 2px 2px 2px var(--shadow);
+    margin: 0 auto;
+}
+
+.meImg.resize {
+    max-width: 75px;
+    max-height: 225px;
+    width: inherit;
+    height: inherit;
+}
+
+
+/*This is a block under the ProfPic.*/
+
+.meImg {
+    display: inline;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    /*margin:10px;*/
+    /*background-color:lightskyblue;*/
+    /*padding:5px 5px 5px 5px;*/
+}
+
+#meImg {
+    /*margin:5px;
+    background-color:hotpink;*/
+    width: 80%;
+    height: 75%;
+    border-radius: 100%;
+}
+
+.img-fluid {
+    border-radius: 4px;
+    /*background-color:lightskyblue;*/
+    /*opacity:0.75;
+    filter: alpha(opacity=75); */
+    /* For IE8 and earlier */
+}
+
+#content-row {
+    background-color: var(--white);
+}
+
+
+/*Transitions and controls for images in Interests section.*/
+
+.label {
+    position: relative;
+    width: 50%;
+}
+
+.cdLink {
+    opacity: 1;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.cdLink:hover .cdLink {
+    opacity: 0.3;
+    box-shadow: -5px 10px 10px var(--black);
+}
+
+.proLink {
+    opacity: 1;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.proLink:hover .proLink {
+    opacity: 0.3;
+    box-shadow: -5px 10px 10px var(--black);
+}
+
+.interestLink {
+    opacity: 1;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.interestLink:hover .interestLink {
+    opacity: 0.3;
+    box-shadow: -5px 10px 10px var(--black);
+}
+
+#projImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 300px;
+    width: inherit;
+    height: inherit;
+}
+
+
+/*Zig Zag Styling.*/
+
+.contentContainer {
+    display: block;
+    margin: 0 auto;
+    /*width: 800px;
+    height: 600px;
+    max-width: 75%;
+    max-height: 75%;
+    box-shadow: var(--shadow);*/
+    padding: 5px 5px;
+    background-blend-mode: color-burn;
+    width: 95%;
+}
+
+
+/* Settings for zig-zag layout. */
+
+
+/* 2/3 column */
+
+.column-66 {
+    float: left;
+    width: 66%;
+    padding: 5px;
+}
+
+
+/* 1/3 column */
+
+.column-33 {
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+
+.descriptBox {
+    display: inline;
+    margin: 0 auto;
+    /*margin:10px;*/
+    /*background-color:lightskyblue;*/
+    border-radius: 4px;
+    /*box-shadow: 0px 2px 2px 2px var(--floatingShadow);*/
+}
+
+#descript {
+    margin-top: 55px;
+    max-height: fit-content;
+    /*border-radius: 10px;*/
+    /*align-self:center;*/
+    display: inline;
+    border-radius: 4px;
+    background: rgba(255, 227, 194, 1);
+    /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 227, 194, 1)), color-stop(55%, rgba(255, 227, 194, 0.86)), color-stop(99%, rgba(210, 102, 30, 0.75)), color-stop(100%, rgba(210, 102, 30, 0.75)));
+    /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* IE 10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 227, 194, 1) 0%, rgba(255, 227, 194, 0.86) 55%, rgba(210, 102, 30, 0.75) 99%, rgba(210, 102, 30, 0.75) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe3c2', endColorstr='#d2661e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.spaceBar {
+    height: 75px;
+    width: 100%;
+    opactiy: 0%;
+}
+
+#projects-row {
+    background-color: none;
+}
+
+.label {
+    text-align: center;
+}
+
+
+/******************************* FOOTER SECTION ************************/
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important: height: 100%;
+    margin: 0 auto -14px;
+}
+
+.footer,
+.push {
+    height: 75;
+    background-color: black;
+    background-blend-mode: color;
+    font-family: 'Palatino Linotype', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+
+/************************* MEDIA QUERIES ***********************************/
+
+@media screen and (max-width: 950px) {
+    .hero-image {
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        position: relative;
+        color: black;
+        /* Set a specific height */
+        width: 100%;
+        height: 100%;
+        /*-webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+        /*filter: sepia(75%);*/
+    }
+    .hero-text {
+        text-align: left;
+        position: absolute;
+        -webkit-transform: translate(0%, 125%);
+        -moz-transform: translate(0%, 125%);
+        -ms-transform: translate(0%, 125%);
+        -o-transform: translate(0%, 125%);
+        transform: translate(0%, 125%);
+    }
+    #heroBanner {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        color: var(--pText);
+        font-weight: bold;
+        font-size: 40px;
+        margin: 10px;
+    }
+    #heroText {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        color: var(--pText);
+        font-weight: bold;
+        margin: 10px;
+    }
+    .row {
+        width: auto;
+        height: 650px;
+        margin: 0px 5px;
+    }
+    .row#hero-row {
+        width: auto;
+        height: 250px;
+        margin: 0px 5px;
+    }
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+    .col-md {
+        border-bottom: 2px solid var(--bPDark);
+    }
+    .footer,
+    .push {
+        min-height: 20px;
+        max-height: 35px;
+    }
+}
+
+
+/*This helps with mobile devices and scrolling with parallax.*/
+
+@media only screen and (max-device-width: 600px) {
+    .hero-image {
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        position: relative;
+        /* Set a specific height */
+        width: 100%;
+        height: 100%;
+    }
+    .hero-text {
+        text-align: left;
+        position: absolute;
+        -webkit-transform: translate(0%, 20%);
+        -moz-transform: translate(0%, 20%);
+        -ms-transform: translate(0%, 20%);
+        -o-transform: translate(0%, 20%);
+        transform: translate(0%, 20%);
+    }
+    #heroBanner {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        color: var(--sText);
+        font-weight: bold;
+        font-size: 40px;
+        margin: 10px;
+    }
+    #heroText {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        color: var(--pText);
+        font-weight: bold;
+        margin: 10px;
+    }
+    .row {
+        width: auto;
+        height: 950px;
+        margin: 0px 5px;
+    }
+    .meImg {
+        max-width: 250;
+        max-height: 450;
+    }
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+    .col-md {
+        border-bottom: 2px solid var(--bPDark);
+    }
+    .footer,
+    .push {
+        min-height: 20px;
+        max-height: 35px;
+    }
+}
