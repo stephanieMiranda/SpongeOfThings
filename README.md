@@ -2,7 +2,7 @@
 
 v1.2 March, 2019
 
-You can now access the code for  this site in the real_site folder of this repository. There is a simple template I'm using in the html file to create new pages as necessary. Because the site is directly changed on cPanel which utilizes the TwitterBootstrap, so there are some minor differences between the code here and the code being hosted. I have not yet found how to link my cPanel to this repository.
+You can now access the code for  this site in the [real_site](https://github.com/stephanieMiranda/SpongeOfThings/tree/master/real_site/thestephaniemiranda) folder of this repository. There is a simple template I'm using in the html file to create new pages as necessary. Because the site is directly changed on cPanel which utilizes Twitter Bootstrap, there are occasional minor differences between the code here and the code being hosted. I have not yet found how to link my cPanel to this repository.
 
 
 v1.1 November, 2018
