@@ -30,7 +30,7 @@ div.container-fluid.projTitle {
 }
 
 .parallax-SER416 {
-    background-image: url("https://www.thestephaniemiranda.com/img/SchoolToLearn.jpg");
+    background-image: url("/img/SchoolToLearn.jpg");
     height: 375px;
     max-width: 100%;
     opacity: 0.5;
@@ -48,7 +48,7 @@ div.container-fluid.projTitle {
 }
 
 .parallax-CD {
-    background-image: url("https://www.thestephaniemiranda.com/img/PuzzlePieces.jpg");
+    background-image: url("/img/PuzzlePieces.jpg");
     height: 350px;
     max-width: 100%;
     opacity: 0.5;
@@ -66,7 +66,7 @@ div.container-fluid.projTitle {
 }
 
 .parallax-FlashCards {
-    background-image: url("https://www.thestephaniemiranda.com/img/AndroidWorldWide.jpg");
+    background-image: url("/img/AndroidWorldWide.jpg");
     height: 350px;
     max-width: 100%;
     opacity: 0.5;
@@ -84,7 +84,7 @@ div.container-fluid.projTitle {
 }
 
 .parallax-WAM {
-    background-image: url("https://www.thestephaniemiranda.com/img/KeyBoardBlur.jpg");
+    background-image: url("/img/KeyBoardBlur.jpg");
     height: 350px;
     max-width: 100%;
     opacity: 0.5;
@@ -114,6 +114,13 @@ div.container-fluid.projTitle {
     font-size: 24px;
     color: white;
     text-align: center;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.center-block:hover {
+    opacity: 1;
+    box-shadow: -5px 10px 10px white;
 }
 
 .barInfo {
@@ -178,14 +185,25 @@ a:active {
 /*This helps with mobile devices and scrolling with parallax.*/
 
 @media only screen and (max-device-width: 600px) {
-    .parallax-top {
+    .parallax-SER416 {
         background-attachment: scroll;
+        height: 150px;
+        max-width: 100%;
     }
-    .parallax-mid {
+    .parallax-CD {
         background-attachment: scroll;
+        height: 150px;
+        max-width: 100%;
     }
-    .parallax-bottom {
+    .parallax-FlashCards {
         background-attachment: scroll;
+        height: 150px;
+        max-width: 100%;
+    }
+    .parallax-WAM {
+        background-attachment: scroll;
+        height: 150px;
+        max-width: 100%;
     }
     .barInfo {
         margin: 75px 25px;

@@ -20,8 +20,15 @@
 
 <body>
     <div class="myBackground">
-        <!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this
-             will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
+
+        <!--[if gte IE 9]
+        <style type="text/css">
+            .gradient {
+                filter: none;
+        }
+        </style>
+    <![endif]-->
+        <!-- This is the navigation bar, it holds buttons and a simple logo. Eventually this will live in it's own page to be used on multiple html pages, for now (11/24) will resort to copying this into each page. -->
         <nav class="navbar navbar-expand-md bg-dark navbar-inverse fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header" id="header">
@@ -46,9 +53,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDrop">
-                                <li><a class="dropdown-item" href='html/projects.html'>Projects</a></li>
-                                <li><a class="dropdown-item" href=".html/hobbies.html">Hobbies</a></li>
-                                <li><a class="dropdown-item" href="html/travel.html">Travel</a></li>
+                                <li><a class="dropdown-item" href='../html/projects.html'>Projects</a></li>
+                                <li><a class="dropdown-item" href="../html/hobbies.html">Hobbies</a></li>
+                                <li><a class="dropdown-item" href="../html/travel.html">Travel</a></li>
                             </ul>
                         </li>
 
@@ -64,145 +71,134 @@
                 </div>
             </div>
         </nav>
-        <!--This sections appears just below the navigation bar (the solid black bar with buttons.) -->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="carousel slide" id="spongeCarousel" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <!-- <img src="..." alt="Stuff"> -->
-                        <p>"You must be the change you wish to see in the world." </p>
-                        <div class="container text-right">
-                            <p> ~ Mahatma Gandhi</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <p> "I believe there are great things in store for those who work hard!" </p>
-                        <div class="container text-right">
-                            <p> ~ Stephanie Miranda</p>
-                        </div>
-                    </div>
+        <!--This sections appears just below the navigation bar (the solid black bar with buttons.)
+    <div class="jumbotron jumbotron-fluid">
+          <div class="carousel slide" id="spongeCarousel" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <!-- <img src="..." alt="Stuff"> 
+                      <p>"You must be the change you wish to see in the world." </p>
+                      <div class="container text-right">
+                                      <p> ~ Mahatma Gandhi</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <p> "I believe there are great things in store for those who work hard!" </p>
+                      <div class="container text-right">
+                                      <p> ~ Stephanie Miranda</p>
+                      </div>
+                  </div>
 
-                    <div class="item">
-                        <p> "You manage things, you lead people. We went overboard on management and forgot about leadership" </p>
-                        <div class="container text-right">
-                            <p> ~ Grace Hopper</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left and right controls -->
+                  <div class="item">
+                      <p> "You manage things, you lead people. We went overboard on management and forgot about leadership" </p>
+                      <div class="container text-right">
+                                      <p> ~ Grace Hopper</p>
+                      </div>
+                  </div>
+            </div>
+               <!-- Left and right controls 
                 <div class="btn-group btn-group-justified inline" role="group">
                     <div class="btn-group" role="group">
-                        <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
+                         <a class="left carousel-control" href="#spongeCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                             <span class="sr-only">Previous</span>
-                        </a>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                         </a>
+                     </div>
+                     <div class="btn-group" role="group">
+                     <a class="right carousel-control" href="#spongeCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      </div>
                 </div>
-            </div>
-        </div>
+         </div>
+    </div>
+     -->
 
         <!-- This is the MAIN BODY CONTENTS.-->
-        <!-- This is the body of the page. -->
-        <div class="container-fluid message text-center">
-            <div class="intro">
-                <!--<h2><b>You have found Stephanie Miranda's personal website. To find out more, check the links in the navigation bar. Each page covers a little about Stephanie's interests, projects and so much more!!
-            <br><br>Thanks for visiting!</br></br></b></h2>-->
+
+
+        <!-- HERO IMAGE. -->
+        <div class="row" id="hero-row">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 id="heroBanner">Welcome to my page!!!</h1>
+                    <p id="heroText">You have found Stephanie Miranda's official web page. I invite you to look around and see what my interests are and to check out projects I've worked on. You can contact me via any of the links provided in the Professional Links tab.
+                        Thank you!</p>
+                </div>
             </div>
-            <!-- The projects that used to be here are now on the projects.html file. -->
         </div>
 
         <!-- This is the title section for Following Zig iter.-->
-        <div class="contentContainer">
-            <!--<a class="anchor" id="titleBar"></a>
-        <div class="title">
-            <h1 class="display-4 my-5 text-center"></h1>
-        </div>
-        -->
+        <div class="row" id="content-row">
+            <div class="contentContainer">
+                <!-- Zig-Zag layout -->
+                <div class="zigWrapper">
+                    <div class="row my-5">
+                        <div class="col-md">
+                            <div class="column-33">
+                                <!--<a class="meLink" href="#me" role="button" id="meLink">-->
+                                <div class="meImg">
+                                    <img alt="ProfPic" class="mb-5 img-fluid " id="meImg" src="img/profile_pic.png" />
+                                    <!--The img itself.-->
+                                </div>
 
-            <!-- Zig-Zag layout -->
-            <div class="zigWrapper">
-                <div class="row my-5">
-                    <div class="col-md">
-                        <div class="column-33">
-                            <h3 class="mb-5 text-left">Hello My Name is...</h3>
-                            <!--<a class="meLink" href="#me" role="button" id="meLink">-->
-                            <div class="meImg">
-                                <!--A block under the image.-->
-                                <img alt="ProfPic" class="mb-5 img-fluid " id="meImg" src="img/frontMe.png" />
-                                <!--The img itself.-->
+                                <!--</a>-->
+
                             </div>
 
-                            <!--</a>-->
-
-                        </div>
-
-                        <div class="column-66" id="descript">
-                            <div class="descriptBox pull-right">
-                                <h3 class="mb-5 text-left"> </h3>
-                                <p>
-                                    <!--<h4 class="mb-4">
-                                    Lorem ipsum dolor sit amet, cum in mundi audire abhorreant, quidam aeterno an mel. Eu assueverit scripserit liberavisse vim, per te labore denique. Cu pro dolores aliquando. Quot deserunt an per, duo vero maiorum in. Tollit petentium dissentias mel cu,
-                                    populo facilisi ne qui, eam iisque feugiat luptatum eu. Ut senserit assentior mei, quando indoctum vel cu.</h4>
-                                    -->
-                                    <h2><b>You have found Stephanie Miranda's personal website. To find out more, check the links in the navigation bar. Each page covers a little about Stephanie's interests, projects and so much more!!
-                <br><br>Thanks for visiting!</br></br></b></h2>
+                            <div class="column-66">
+                                <h1 class="mb-5 text-left" id="descriptBanner">Who is Stephanie Miranda?</h1>
+                                <p id="descriptText">
+                                    As an online student, clear communication is paramount in successful leading and following, especially in remote setting. In the years to come I'd like to continue to work remotely, which has allowed me to have marvelous experiences. I've learn the art
+                                    of balancing my time between family, school and hobbies like bicycling, art, riding my motorcycle and cooking!
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row my-5 spaceBar">
-
-            </div>
-
-            <!--
-        <div class="row my-5">
-            <div class="col-md">
-                <div class="column-33" id="descript">
-                    <h3 class="mb-5 text-left"> </h3>
-                    <p>
-                        <h4 class="mb-4">Sample Text</h4>
-                    </p>
+                <div class="row my-5 spaceBar">
                 </div>
-                <div class="column-66">
-                    <h3 class="mb-4 text-left"></h3>
-                    <a class="donLink" href="#" role="button" id="Link">
-                        <img alt="Image" class="mb-5 img-fluid rounded d-none d-sm-block pull-right" src="" />
-                    </a>
 
+                <!-- End of ZZ layout. -->
+            </div>
+        </div>
+
+        <div class="row" id="projectsRow">
+            <div class="column-33">
+                <div class="role">
+                    <div class="label">
+                        <h1 id="heroBanner">Student</h1>
+                        <a class="cdLink" href="https://www.thestephaniemiranda.com/html/projects.html#CDlink"><img alt="CodeDevils" class="mb-5 img-fluid cdLink" id="projImg" src="img/CodeDevils.png" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-33">
+                <div class="role">
+                    <div class="label">
+                        <h1 id="heroBanner">Professional</h1>
+                        <a class="proLink" href="https://www.thestephaniemiranda.com#linksDrop"><img alt="Work" class="mb-5 img-fluid proLink" id="projImg" src="img/work.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-33">
+                <div class="role">
+                    <div class="label">
+                        <h1 id="heroBanner">Interests</h1>
+                        <a class="interestLink" href="https://www.thestephaniemiranda.com/html/hobbies.html"><img alt="Interests" class="mb-5 img-fluid interestLink" id="projImg" src="img/Baking.jpg" /></a>
+                    </div>
                 </div>
             </div>
         </div>
-        -->
 
-            <!-- End of ZZ layout. -->
-        </div>
-
-        <!-- Not sure this section is necessary, but will leave it.
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     -->
-        <!-- This script below makes sure the dropdown menus disappear after clicking away from the menue itself. (Anywhere).
-    <script>
-        $('.navbar-collapse ul li a').click(function() {
-            $('.navbar-toggle:visible').click();
-            });
-        </script>
-         -->
 
         <div class="footer">
             <!--<footer id="footer" class="container-fluid text-center"> -->
             <p>Written and maintained by Stephanie Miranda.</p>
-            <p>Last updated: March 2019 Copyright &copy; 2018</p>
+            <p>Last updated: April 2019 Copyright &copy; 2018 - 2019</p>
             <!-- </footer> 12/18, -->
         </div>
 </body>
