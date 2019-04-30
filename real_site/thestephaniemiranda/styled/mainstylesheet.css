@@ -564,7 +564,7 @@ div.container-fluid.message {
 
 .wrapper {
     min-height: 100%;
-    height: auto !important: height: 100%;
+    height: auto !important;
     margin: 0 auto -14px;
 }
 
